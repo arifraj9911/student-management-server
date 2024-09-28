@@ -2,10 +2,15 @@ import { Sequelize } from "sequelize";
 import { createUserModel } from "../model/userSchema.js";
 import { createStudentModel } from "../model/studentSchema.js";
 
-const sequelize = new Sequelize("crud-express", "postgres", "arif@210505", {
-  host: "localhost",
-  dialect: "postgres",
-});
+const sequelize = new Sequelize(
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_DIALECT,
+  }
+);
 
 let UserModel = null;
 let StudentModel = null;
