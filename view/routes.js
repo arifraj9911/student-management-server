@@ -15,15 +15,15 @@ import {
 const router = express.Router();
 
 // for user
-router.get("/getAll", getAll);
-router.post("/addUser", addUser);
-router.put("/updateUser/:empId", updateUser);
-router.delete("/deleteUser/:empId", deleteUser);
+router.get("/api/getAll", getAll);
+router.post("/api/addUser", addUser);
+router.put("/api/updateUser/:empId", updateUser);
+router.delete("/api/deleteUser/:empId", deleteUser);
 
 // for student
-router.get("/getAllStudent", getAllStudent);
-router.post("/addStudent", addStudent);
-router.put("/updateStudent/:roll", updateStudent);
-router.delete("/deleteStudent/:roll", deleteStudent);
+router.get("/api/getAllStudent", getAllStudent);
+router.post("/api/addStudent", addStudent);
+router.put("/api/updateStudent/:roll", updateStudent);
+router.delete("/api/deleteStudent/:roll", deleteStudent);
 
 export default router;

@@ -13,8 +13,10 @@ app.use(router);
 
 // app.get('req,res')
 
-app.listen(port, () => {
-  console.log(`server running on the port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`server running on the port ${port}`);
+// });
 
 connection();
+
+export default app;
