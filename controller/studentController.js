@@ -1,3 +1,4 @@
+import { col, fn, Op, Sequelize } from "sequelize";
 import { StudentModel } from "../postgres/postgres.js";
 
 export const getAllStudent = async (req, res) => {

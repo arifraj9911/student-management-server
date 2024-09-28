@@ -36,7 +36,7 @@ export const createStudentModel = async (sequelize) => {
       allowNull: false,
     },
     roll: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
